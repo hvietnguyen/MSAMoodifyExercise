@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Bootstrap's CSS-->
+        <link rel="stylesheet" type="text/css" href="./bootstrap/dist/css/bootstrap.min.css" >
+        <!--Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="./css/style.css" >
+    </head>
+
+    <body>
+        <div class="container" id="page-container">
+            <h1 id="app-name">
+                <span class="glyphicon glyphicon-headphones"></span>moodify   
+            </h1>
+            <h2 id="page-header">
+                Get song recommendation based on your mood. 
+            </h2>
+            <img id="selected_img"/>
+            <h4 id="track-name"></h4>
+            <div class="btn-wrapper">
+                <label class="btn btn-info" for="my-file-selector">
+                    <input id="my-file-selector" type="file">
+                    Upload a picture of you
+                </label>
+                <button type="button" class="btn btn-info" id="refreshbtn">Another song please</button>
+            </div>
+            <div id="musicplayer"></div>
+        </div>
+    
+        <!--JQuery Script-->
+        <script src="./jquery/dist/jquery.min.js"></script>
+        <!--Bootstrap script-->
+        <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--Custom Script-->
+        <!--<script src="./js/basic.js"></script>-->        
+        <script src="./js/main.js"></script>
+        <script src="./js/musichandler.js"></script>
+        <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    </body>
+</html>
